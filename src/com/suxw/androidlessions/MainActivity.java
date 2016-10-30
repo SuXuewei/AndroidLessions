@@ -3,8 +3,8 @@ package com.suxw.androidlessions;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -29,17 +29,22 @@ public class MainActivity extends Activity {
 		lvTestItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			public void onItemClick(AdapterView<?> adapterView , View view , int position ,long arg3) 
 		    {
-		        Log.i("Item clicked","tushar:itemclicked") ;
+		        if(0 == position) {
+		        	Intent intent = new Intent();
+		        	intent.setClass(MainActivity.this, FoodListActivity.class);
+		        	startActivity(intent);
+		        }
 		    }
 		});
 	}
 
 	private ArrayList<String> getData(){
 		ArrayList<String> list = new ArrayList<String>();
+		list.add("吃啥");
 		list.add("UI控件使用");
 		list.add("数据解析");
 		list.add("数据存储");
-		
+
 		return list;
 	}
 
