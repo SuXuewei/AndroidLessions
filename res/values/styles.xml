@@ -17,4 +17,14 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="LabelText" parent="android:TextAppearance.Large">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FormButton" parent="android:Widget.Button">
+        <item name="android:minWidth">@dimen/buttonWidth</item>
+        <item name="android:background">@drawable/btn_background</item>
+        <item name="android:textColor">@color/lightBlue</item>
+    </style>
+    
 </resources>
