@@ -6,7 +6,7 @@
         android:id="@+id/tv_testmenu_empty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No Items" />
+        android:text="Not Items test menu" />
 
     <ListView
         android:id="@+id/lv_testmenu_list_items"
