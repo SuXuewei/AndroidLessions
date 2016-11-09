@@ -3,6 +3,7 @@ package com.suxw.androidlessions;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -20,6 +21,7 @@ public class FoodListActivity extends Activity {
 	ArrayList<String> mFoodList;
 	ArrayAdapter<String> mViewAdapter;
 	EditText etFoodCount;
+	Button btnStart;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,10 @@ public class FoodListActivity extends Activity {
 
 		mFoods = initData();
 
-		Button btnStart	= (Button)findViewById(R.id.btn_start);
+		
+		btnStart	= (Button)findViewById(R.id.btn_start);
+		btnStart.setTextColor(Color.RED);
+		btnStart.setTextColor(getResources().getColor(R.color.testColor));
 		ListView lvFoods = (ListView)findViewById(R.id.lv_foodList);
 		TextView tvEmpty	= (TextView)findViewById(R.id.tv_foodlistempty);
 		EditText etMainFoodCount = (EditText)findViewById(R.id.et_mainFoodCount);
@@ -51,6 +56,7 @@ public class FoodListActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Log.i(TAG, "onClick");
+				//FoodListActivity.this.btnStart.setTextColor(Color.BLUE);
 				changeFoodList();
 			}
 		});

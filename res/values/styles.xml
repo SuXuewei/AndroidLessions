@@ -24,7 +24,7 @@
     <style name="FormButton" parent="android:Widget.Button">
         <item name="android:minWidth">@dimen/buttonWidth</item>
         <item name="android:background">@drawable/btn_background</item>
-        <item name="android:textColor">@color/lightBlue</item>
+        <item name="android:textColor">@color/testColor</item>
     </style>
     
 </resources>

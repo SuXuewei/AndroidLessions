@@ -4,5 +4,6 @@
     <color name="lightGray">#BFBFBF</color>
     <color name="lightBlue">#6699FF</color>
     <color name="lightGreen">#99cc33</color>
+    <color name="testColor">#7F99cc33</color>
 
 </resources>

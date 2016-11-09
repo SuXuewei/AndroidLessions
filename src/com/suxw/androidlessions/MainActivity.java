@@ -12,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.suxw.androidlessions.menu.UIMenuActivity;
+
 public class MainActivity extends Activity {
 
 	@Override
@@ -25,25 +27,31 @@ public class MainActivity extends Activity {
 				R.layout.testmenu_list_item, 	//listview需要一个布局文件来完成对item的布局
 				R.id.tv_testmenu_item,			//确认在item布局中用于显示内容的控件id
 				getData()));
-		
+
 		lvTestItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			public void onItemClick(AdapterView<?> adapterView , View view , int position ,long arg3) 
 		    {
+				Intent intent;
 		        if(0 == position) {
-		        	Intent intent = new Intent();
+		        	intent = new Intent();
 		        	intent.setClass(MainActivity.this, FoodListActivity.class);
-		        	startActivity(intent);
-		        }
+		        } else if (1 == position) {
+		        	intent = new Intent();
+		        	intent.setClass(MainActivity.this, UIMenuActivity.class);
+				} else {
+					return;
+				}
+		        startActivity(intent);
 		    }
 		});
 	}
 
 	private ArrayList<String> getData(){
 		ArrayList<String> list = new ArrayList<String>();
-		list.add("吃啥");
-		list.add("UI控件使用");
-		list.add("数据解析");
-		list.add("数据存储");
+		list.add(getResources().getString(R.string.unit_eatwhat));
+		list.add(getResources().getString(R.string.unit_ui));
+		list.add(getResources().getString(R.string.unit_parsedata));
+		list.add(getResources().getString(R.string.unit_storedata));
 
 		return list;
 	}

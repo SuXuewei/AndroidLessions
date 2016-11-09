@@ -26,6 +26,19 @@
             android:name="com.suxw.androidlessions.FoodListActivity"
             android:label="@string/app_name">
         </activity>
+        <activity 
+            android:name="com.suxw.androidlessions.menu.UIMenuActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name="com.suxw.androidlessions.layoutandview.CreateViewActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name="com.suxw.androidlessions.layoutandview.FullScreenActivity"
+            android:label="@string/app_name">
+        </activity>
+
     </application>
 
 </manifest>
