@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.suxw.androidlessions.R;
 import com.suxw.androidlessions.layoutandview.CreateViewActivity;
+import com.suxw.androidlessions.layoutandview.DIYViewActivity;
 
 public class UIMenuActivity extends Activity {
 
@@ -38,6 +39,9 @@ public class UIMenuActivity extends Activity {
 				if(0 == position) {
 					intent = new Intent();
 					intent.setClass(UIMenuActivity.this, CreateViewActivity.class);
+				} else if(1 == position) {
+					intent = new Intent();
+					intent.setClass(UIMenuActivity.this, DIYViewActivity.class);
 				} else {
 					return;
 				}
