@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.suxw.androidlessions.R;
+import com.suxw.androidlessions.layoutandview.AnimatorActivity;
 import com.suxw.androidlessions.layoutandview.CreateViewActivity;
 import com.suxw.androidlessions.layoutandview.DIYViewActivity;
 
@@ -42,6 +43,9 @@ public class UIMenuActivity extends Activity {
 				} else if(1 == position) {
 					intent = new Intent();
 					intent.setClass(UIMenuActivity.this, DIYViewActivity.class);
+				} else if(2 == position) {
+					intent = new Intent();
+					intent.setClass(UIMenuActivity.this, AnimatorActivity.class);
 				} else {
 					return;
 				}
@@ -54,6 +58,7 @@ public class UIMenuActivity extends Activity {
 		ArrayList<String> list = new ArrayList<String>();
 		list.add(getResources().getString(R.string.unit_ui_set_system_ui));
 		list.add(getResources().getString(R.string.unit_ui_creat_view));
+		list.add(getResources().getString(R.string.unit_ui_animate_view));
 		return list;
 	}
 }
