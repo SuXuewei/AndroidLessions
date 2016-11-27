@@ -15,6 +15,8 @@ import com.suxw.androidlessions.R;
 import com.suxw.androidlessions.layoutandview.AnimatorActivity;
 import com.suxw.androidlessions.layoutandview.CreateViewActivity;
 import com.suxw.androidlessions.layoutandview.DIYViewActivity;
+import com.suxw.androidlessions.layoutandview.FlipperActivity;
+import com.suxw.androidlessions.layoutandview.TossCoinActivity;
 
 public class UIMenuActivity extends Activity {
 
@@ -46,6 +48,12 @@ public class UIMenuActivity extends Activity {
 				} else if(2 == position) {
 					intent = new Intent();
 					intent.setClass(UIMenuActivity.this, AnimatorActivity.class);
+				} else if(3 == position) {
+					intent = new Intent();
+					intent.setClass(UIMenuActivity.this, FlipperActivity.class);
+				} else if(4 == position) {
+					intent = new Intent();
+					intent.setClass(UIMenuActivity.this, TossCoinActivity.class);
 				} else {
 					return;
 				}
@@ -59,6 +67,8 @@ public class UIMenuActivity extends Activity {
 		list.add(getResources().getString(R.string.unit_ui_set_system_ui));
 		list.add(getResources().getString(R.string.unit_ui_creat_view));
 		list.add(getResources().getString(R.string.unit_ui_animate_view));
+		list.add(getResources().getString(R.string.unit_ui_animate_rotation_view));
+		list.add(getResources().getString(R.string.unit_ui_animate_toss_coin));
 		return list;
 	}
 }

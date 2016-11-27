@@ -11,5 +11,7 @@
     <string name="unit_ui_set_system_ui">切换系统UI</string>
     <string name="unit_ui_creat_view">创建并显示view</string>
     <string name="unit_ui_animate_view">使用view动态</string>
+    <string name="unit_ui_animate_rotation_view">单一动态旋转</string>
+    <string name="unit_ui_animate_toss_coin">抛硬币动画</string>
 
 </resources>

@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import android.util.Log;
 
+
 public class ComTLV {
 	static final String TAG = "ComTLV";
 
@@ -133,6 +134,7 @@ public class ComTLV {
 			return null;
 		}
 
+		
 		nTagLen = calcTLen(tlv, i);
 		nLenLen = calcLLen(tlv, i + nTagLen);
 		if ((i + nTagLen + nLenLen) >= tlv.length) {
