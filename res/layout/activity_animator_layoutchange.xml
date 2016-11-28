@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <Button 
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onAddClick"
+        android:text="Click To Add Item"/>
+
+    <LinearLayout 
+        android:id="@+id/verticalContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+     	android:animateLayoutChanges="true">	 <!-- 开启布局变动动画效果，布局变动有五种情况 1容器中出现新师徒 2容器中小时一个视图 3布局改变导致某个视图改变，如大小调整，不包括控件添加或移除视图 4其他视图的出现导致某个视图改变 5其他视图消失导致某个视图改变 -->
+
+    </LinearLayout>
+
+</LinearLayout>
