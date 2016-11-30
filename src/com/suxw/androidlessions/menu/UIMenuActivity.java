@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.suxw.androidlessions.R;
+import com.suxw.androidlessions.layoutandview.AdapterViewUseEmptyViewActivity;
 import com.suxw.androidlessions.layoutandview.AnimatorActivity;
 import com.suxw.androidlessions.layoutandview.CreateViewActivity;
 import com.suxw.androidlessions.layoutandview.DIYViewActivity;
@@ -58,6 +59,9 @@ public class UIMenuActivity extends Activity {
 				} else if(5 == position) {
 					intent = new Intent();
 					intent.setClass(UIMenuActivity.this, LayoutChangeAnimatorActivity.class);
+				} else if(6 == position) {
+					intent = new Intent();
+					intent.setClass(UIMenuActivity.this, AdapterViewUseEmptyViewActivity.class);
 				} else {
 					return;
 				}
@@ -74,6 +78,7 @@ public class UIMenuActivity extends Activity {
 		list.add(getResources().getString(R.string.unit_ui_animate_rotation_view));
 		list.add(getResources().getString(R.string.unit_ui_animate_toss_coin));
 		list.add(getResources().getString(R.string.unit_ui_animate_layoutchanged));
+		list.add(getResources().getString(R.string.unit_ui_adapterview_emptyview));
 		return list;
 	}
 }

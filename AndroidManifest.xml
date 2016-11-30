@@ -58,6 +58,10 @@
             android:name="com.suxw.androidlessions.layoutandview.LayoutChangeAnimatorActivity"
             android:label="@string/app_name">
         </activity>
+        <activity 
+            android:name="com.suxw.androidlessions.layoutandview.AdapterViewUseEmptyViewActivity"
+            android:label="@string/app_name">
+        </activity>
     </application>
 
 </manifest>
