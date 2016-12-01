@@ -18,6 +18,7 @@ import com.suxw.androidlessions.layoutandview.CreateViewActivity;
 import com.suxw.androidlessions.layoutandview.DIYViewActivity;
 import com.suxw.androidlessions.layoutandview.FlipperActivity;
 import com.suxw.androidlessions.layoutandview.LayoutChangeAnimatorActivity;
+import com.suxw.androidlessions.layoutandview.ListViewBackgroundActivity;
 import com.suxw.androidlessions.layoutandview.TossCoinActivity;
 
 public class UIMenuActivity extends Activity {
@@ -62,6 +63,9 @@ public class UIMenuActivity extends Activity {
 				} else if(6 == position) {
 					intent = new Intent();
 					intent.setClass(UIMenuActivity.this, AdapterViewUseEmptyViewActivity.class);
+				} else if(7 == position) {
+					intent = new Intent();
+					intent.setClass(UIMenuActivity.this, ListViewBackgroundActivity.class);
 				} else {
 					return;
 				}
@@ -79,6 +83,7 @@ public class UIMenuActivity extends Activity {
 		list.add(getResources().getString(R.string.unit_ui_animate_toss_coin));
 		list.add(getResources().getString(R.string.unit_ui_animate_layoutchanged));
 		list.add(getResources().getString(R.string.unit_ui_adapterview_emptyview));
+		list.add(getResources().getString(R.string.unit_ui_listview_background));
 		return list;
 	}
 }

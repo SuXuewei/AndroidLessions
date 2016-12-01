@@ -15,5 +15,6 @@
     <string name="unit_ui_animate_toss_coin">抛硬币动画</string>
     <string name="unit_ui_animate_layoutchanged">布局变动时的动画</string>
     <string name="unit_ui_adapterview_emptyview">设置adapterview空视图</string>
+    <string name="unit_ui_listview_background">自定义listview单元背景图</string>
 
 </resources>
